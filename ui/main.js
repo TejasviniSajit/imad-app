@@ -14,6 +14,6 @@ button.onclick = function () {
       }
   };
   
-  request.open('GET', 'http://http://tejasviniforensics.imad.hasura-app.io/counter', true);
+  request.open('GET', 'http://tejasviniforensics.imad.hasura-app.io/counter', true);
   request.send(null);
 };
