@@ -70,6 +70,13 @@ app.get('/counter', function (req, res){
    res.send(counter.toString());
 });
 
+var names = [];
+app.get('/submit-name', function(req, res) {
+   var name = req.query.name;
+   names.push(name);
+   res.send(JSON.stringify(names));
+});
+
 app.get('article/:articleName', function(req, res){
   pool.query("SELECT * FROM article WHERE title=$1", [req.params.articleName], function (err, result) {
         if (err) {
@@ -86,13 +93,6 @@ app.get('article/:articleName', function(req, res){
   
 });
 
-//app.get('/article-two', function(req, res){
-  //res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-//});
-
-//app.get('/article-three', function(req, res){
-  //res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-//});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
@@ -104,13 +104,6 @@ app.get('/ui/main.js', function (req, res) {
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
-});
-
-var names = [];
-app.get('/submit-name', function(req, res) {
-   var name = req.query.name;
-   names.push(name);
-   res.send(JSON.stringify(names));
 });
 
 
