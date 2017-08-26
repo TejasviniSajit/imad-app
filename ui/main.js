@@ -2,7 +2,7 @@
 var img = document.getElementById('madi');
 img.onclick = function () {
     img.style.marginleft = "500px";
-}
+};
 
 //counter code
 var button = document.getElementById('counter');
