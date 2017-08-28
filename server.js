@@ -14,48 +14,7 @@ var config = {
     password: process.env.DB_PASSWORD
 };
 
-var articles = {
-    'article-one' : {
-        title: 'Article one | TJ',
-        heading: 'Article one',
-        date: 'Sept 5, 2016',
-        content: `<p>
-                         This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-                    </p>
-                    <p>
-                         This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-                    </p>
-                    <p>
-                         This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-                    </p>`
-    },
-    'article-two' : {
-        title: 'Article two | TJ',
-        heading: 'Article two',
-        date: 'Dec 10, 2016',
-        content: `<p>
-                         This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-                    </p>
-                    <p>
-                         This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-                    </p>
-                    <p>
-                         This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-                    </p>`},
-    'article-three' : {
-        title: 'Article three | TJ',
-        heading: 'Article three',
-        date: 'Dec 15, 2016',
-        content: `<p>
-                         This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-                    </p>
-                    <p>
-                         This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-                    </p>
-                    <p>
-                         This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-                    </p>`}
-};
+
 
 function createTemplate (data) {
     var title = data.title;
