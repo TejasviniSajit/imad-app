@@ -88,6 +88,8 @@ function loadComments () {
                 }
                 document.getElementById('comments').innerHTML = content;
             } else {
+                
+                Console.log('here...');
                 document.getElementById('comments').innerHTML('Oops! Could not load comments!');
             }
         }
