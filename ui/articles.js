@@ -89,8 +89,7 @@ function loadComments () {
                 document.getElementById('comments').innerHTML = content;
             } else {
                 
-                console.log('here...');
-                document.getElementById('comments').innerHTML('<p>Oops! Could not load comments!</p>');
+                document.getElementById('comments').innerHTML = 'Oops! Could not load comments!';
             }
         }
     };
