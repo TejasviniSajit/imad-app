@@ -76,8 +76,6 @@ function loadComments () {
                 var content = '';
                 var commentsData = JSON.parse(this.responseText);
                 
-                Console.log(this.responseText);
-                
                 for (var i=0; i< commentsData.length; i++) {
                     var time = new Date(commentsData[i].timestamp);
                     content += `<div class="comment">
