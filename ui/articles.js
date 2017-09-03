@@ -90,7 +90,7 @@ function loadComments () {
             } else {
                 
                 console.log('here...');
-                document.getElementById('comments').innerHTML('Oops! Could not load comments!');
+                document.getElementById('comments').innerHTML('<p>Oops! Could not load comments!</p>');
             }
         }
     };
