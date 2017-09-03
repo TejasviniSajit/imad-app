@@ -46,7 +46,7 @@ register.onclick = function() {
     request.onreadystatechange = function() {
       if (request.readyState === XMLHttpRequest.DONE) {
           if (request.status === 200) {
-                console.log('New user '+username+' registered');
+                console.log('New user registered');
                 alert("Registered successfully!");
             } else if (request.status === 500) {
                 alert("Something went wrong on the server");
